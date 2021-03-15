@@ -1,7 +1,3 @@
-# Lab 1 - 15 Marzo 2021
+# AW1 Labs
 
-## Istruzioni
-
-Partendo dalla root del progetto:
-- cd <tuo nome>
-- Committa la tua soluzione e pusha
+Laboratori di AW1
