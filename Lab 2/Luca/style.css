@@ -1,0 +1,31 @@
+.todo-navbar {
+  background-color: rgb(6, 214, 179);
+}
+
+.todo-brand {
+  color: rgb(0, 0, 0);
+}
+.todo-brand:hover {
+  color: rgb(168, 253, 239);
+}
+
+.filter-buttons {
+  background-color: rgb(235, 235, 235);
+}
+
+.filter-button {
+  color: white;
+  background-color: rgb(6, 214, 179);
+}
+.filter-button:hover {
+  color: white;
+  background-color: rgb(6, 192, 161);
+}
+.filter-button:active {
+  color: white;
+  background-color: rgb(7, 175, 147);
+}
+
+.important-text {
+  color: rgb(207, 7, 7);
+}
