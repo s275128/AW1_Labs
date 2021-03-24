@@ -1,0 +1,112 @@
+
+
+<!DOCTYPE html>
+<html>
+    
+
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="stylesheet" href="style_lab2.css">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-success">
+           
+            <a class="navbar-brand margine_lati" href="#"><div class="text-color-white">ToDoManager</div></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
+             
+              <form class="form-inline my-2 my-lg-0 ">
+                <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search">
+              </form>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill margine_lati" viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+            </svg>
+           
+            
+          </nav>
+
+    </head>
+    <body>
+        
+        <table class="tabellabella"   >
+            <tbody>
+              <tr>
+                <td class="table-light col-4" >
+                    <div class="btn-group-vertical col-8 lista-bottoni" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradio" id="Allbt" autocomplete="off" checked>
+                        <label class="btn btn-outline-success mybutton" for="Allbt">All</label> 
+                      
+                        <input type="radio" class="btn-check" name="btnradio" id="Importantbt" autocomplete="off">
+                        <label class="btn btn-outline-success mybutton" for="Importantbt">Important</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="todaybt" autocomplete="off">
+                        <label class="btn btn-outline-success mybutton" for="todaybt">Today</label>
+                      
+                        <input type="radio" class="btn-check" name="btnradio" id="mext7bt" autocomplete="off">
+                        <label class="btn btn-outline-success mybutton" for="mext7bt">Next 7 days</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="privatebt" autocomplete="off">
+                        <label class="btn btn-outline-success mybutton" for="privatebt">Private</label>
+                        
+                        
+                      </div>
+                </td>
+                <td class=" col-8">
+                    <h1>All</h1>
+                    <table class="table tabellabella2">
+                        <tbody>
+                          <tr>
+                              <td class="col-3">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                              </td>
+                              <td class="col-3">Complete Lab</td>
+                              <td class="col-3"></td>
+                              <td class="col-3">Monday 22 March 2021at 14:30</td>
+                            
+                          </tr>
+                          <tr>
+                            <td class="col-3">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                              </td>
+                              <td class="col-3">Buy some groceries</td>
+                              <td class="col-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                  </svg>
+                              </td>
+                              <td class="col-3">Today at 14:00</td>
+                            
+                          </tr>
+                          <tr>
+                            <td class="col-3">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                              </td>
+                              <td class="col-3 text-danger">Read a good Book </td>
+                              <td class="col-3"></td>
+                              <td class="col-3"></td>
+                            
+                          </tr>
+                        </tbody>
+                      </table>
+
+                </td>
+                
+            </tbody>
+            
+        </table>
+        <footer class="position-absolute bottom-0 end-0" style="margin-bottom: 2%; margin-right: 2%; ">
+            <button class="btn btn-success rounded-circle" type="submit">+</button>
+        </footer>
+        
+        
+          
+
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+
+    </body>
+</html>
