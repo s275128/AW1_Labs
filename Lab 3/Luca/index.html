@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Bootstrap JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+
+  <!-- Dayjs -->
+  <script defer src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+
+  <!-- My logic -->
+  <script defer src="logic.js"></script>
+
+  <title>ToDo Manager</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg todo-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand todo-brand" href="#">ToDo Manager</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          </form>
+        </div>
+
+        <i class="bi bi-person-fill justify-content-end" style="font-size: 2rem;"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="row">
+      <div class="col-4">
+        <div class="d-grid gap-2 p-2 filter-buttons">
+          <button class="btn filter-button" type="button" id="btn-all">All</button>
+          <button class="btn filter-button" type="button" id="btn-important">Important</button>
+          <button class="btn filter-button" type="button" id="btn-today">Today</button>
+          <button class="btn filter-button" type="button" id="btn-next-days">Next 7 Days</button>
+          <button class="btn filter-button" type="button" id="btn-private">Private</button>
+        </div>
+      </div>
+
+      <div class="col-8">
+        <h1>All</h1>
+
+        <table class="table table-hover">
+          <tbody id="table-body">
+            <!-- <tr>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="checkbox1" />
+                  <label class="form-check-label" for="checkbox1">
+                    Complete Lab 2
+                  </label>
+                </div>
+              </td>
+              <td class="text-center"></td>
+              <td class="text-end">Monday 22 March 2021 at 2:30 pm</td>
+            </tr>
+
+            <tr class="align-middle">
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="checkbox2" />
+                  <label class="form-check-label" for="checkbox2">
+                    Buy some groceries
+                  </label>
+                </div>
+              </td>
+              <td class="text-center">
+                <i class="bi bi-eye" style="font-size: 1.5rem;"></i>
+              </td>
+              <td class="text-end">Today at 2:00 pm</td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="checkbox3" />
+                  <label class="form-check-label important-text" for="checkbox3">
+                    Read a good book
+                  </label>
+                </div>
+              </td>
+              <td class="text-center"></td>
+              <td class="text-end"></td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <footer class="position-absolute bottom-0 end-0 p-2">
+    <button class="btn btn-primary rounded-circle" type="submit">+</button>
+  </footer>
+</body>
+
+</html>
