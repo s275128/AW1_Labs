@@ -19,13 +19,13 @@ const tasks = [
 const drawTasks = (tasks) => {
   let html = "";
 
-  for (const task of tasks) {
+  tasks.forEach((task, index) => {
     html += `
     <tr class="align-middle">
       <td>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="checkbox1" />
-          <label class="form-check-label" for="checkbox1">
+          <input class="form-check-input" type="checkbox" value="" id="checkbox${index}" />
+          <label class="form-check-label ${task.urgent ? 'text-danger' : ''}" for="checkbox${index}">
             ${task.description}
           </label>
         </div>
@@ -40,7 +40,7 @@ const drawTasks = (tasks) => {
       </td>
     </tr>
     `;
-  }
+  })
 
   const tbody = document.getElementById("table-body");
   tbody.innerHTML = html;
