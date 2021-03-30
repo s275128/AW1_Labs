@@ -1,0 +1,25 @@
+
+  
+.margine_lati {
+    margin-left: 2%;
+    margin-right: 2%;
+    
+}
+.text-color-white{
+    color: white;
+}
+
+.lista-bottoni{
+  margin-left: 5%;
+}
+
+.mybutton:hover{
+  color:black;
+  background-color: rgb(211, 211, 211);
+}
+
+.tabellabella {
+  height:90%;width:100%; margin-top: 2%; bottom: 10%; left: 0; right: 0;
+}
+
+
